@@ -1,0 +1,115 @@
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Added padding for better spacing on smaller screens */
+}
+
+.aboutTop {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; /* Added text alignment for center */
+}
+
+.aboutBottom {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.aboutBottom p {
+    width: 80%; /* Reduced width for smaller screens */
+    max-width: 1200px;
+    margin-bottom: 40px;
+    font-size: 18px; /* Adjusted font size for better readability on smaller screens */
+    text-align: center; /* Centered text */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.aboutBottom h1,
+.aboutUs h1 { 
+    font-weight: 400;
+    font-size: 70px;
+    margin-top: 10px;
+    color: #000;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.aboutUs h1 { /* Specific styles for the ABOUT US title */
+    animation: fadeInOut 3s ease-in-out infinite; 
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .aboutTop {
+        height: 30vh; /* Adjusted height for medium screens */
+    }
+
+    .aboutBottom h1 {
+        font-size: 50px; /* Smaller font for title */
+    }
+
+    .aboutBottom p {
+        font-size: 16px; /* Adjusted font size for paragraph */
+        width: 90%; /* Reduced width */
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutTop {
+        height: 25vh; /* Adjusted height for smaller screens */
+    }
+
+    .aboutBottom h1 {
+        font-size: 40px; /* Further reduced title font size */
+    }
+
+    .aboutBottom p {
+        font-size: 14px; /* Smaller font size for paragraph */
+        width: 90%; /* Adjusted width to fit smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutTop {
+        height: 20vh; /* Even smaller height for mobile */
+    }
+
+    .aboutBottom h1 {
+        font-size: 30px; /* Even smaller font size for mobile */
+    }
+
+    .aboutBottom p {
+        font-size: 12px; /* Smallest font size for paragraph */
+        width: 95%; /* Adjusted width to take up more space */
+    }
+}
