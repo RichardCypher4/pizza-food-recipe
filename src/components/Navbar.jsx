@@ -17,7 +17,6 @@ function Navbar() {
         <Link to='/contact'>Contact</Link>
       </div>
 
-      {/* Hamburger Menu (Visible only on small screens) */}
       <div className='hamburger'>
         <div className='line'></div>
         <div className='line'></div>

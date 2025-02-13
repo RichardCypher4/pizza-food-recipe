@@ -102,10 +102,7 @@
 
     .rightside {
         display: none; /* Hide the regular menu */
-    }
-
-    .hamburger {
-        display: flex; /* Show the hamburger menu */
+    
     }
 }
 
